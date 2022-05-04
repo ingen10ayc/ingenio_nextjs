@@ -2,14 +2,14 @@ import Head from 'next/head'
 import { Container } from '@nextui-org/react';
 
 // Components
-import { Menu } from './Menu';
-import { VideoCard } from './VideoCard';
-import { SecValor } from './SecValor';
-import { SecValorSlider } from './SecValorSlider';
-import { SecProductos } from './SecProductos';
-import { SecServicios } from './SecServicios';
-import { LogoSlider } from './LogoSlider';
-import { PiePagina } from './PiePagina';
+import { Menu } from '../components/Menu';
+import { VideoCard } from '../components/VideoCard';
+import { SecValor } from '../components/SecValor';
+import { SecValorSlider } from '../components/SecValorSlider';
+import { SecProductos } from '../components/SecProductos';
+import { SecServicios } from '../components/SecServicios';
+import { LogoSlider } from '../components/LogoSlider';
+import { PiePagina } from '../components/PiePagina';
 
 export default function Home() {
 
