@@ -1,7 +1,6 @@
-import { Card, Col, Row, Text, Grid } from '@nextui-org/react';
-import { Titulo } from './Titulo';
+import { Card, Col, Row, Text, Grid, Spacer } from '@nextui-org/react';
 
-export const SecServicios = () => {
+export const SecServicios = ( {isMD}) => {
 
   const dataSeccion3 = [
     {
@@ -24,20 +23,21 @@ export const SecServicios = () => {
   const CardSeccion2 = ({ titulo, texto, imagen }) => {
     return (
       <Card cover css={{ w: "100%" }}>
-        <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
+        <Card.Header css={{ position: "absolute", zIndex: 1, bottom: "10%" }}>
           <Col>
-            <Text h3 color="white">
-              {titulo}
-            </Text>
+
           </Col>
         </Card.Header>
         <Card.Body>
           <Card.Image src={imagen} height={400} width="100%" alt="Card example background" />
         </Card.Body>
-        <Card.Footer blur css={{ position: "absolute", bgBlur: "#ffffff", borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)", bottom: 0, zIndex: 1, }} >
+        <Card.Footer blur css={{ position: "absolute", bgBlur: "#000000", borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)", bottom: 0, zIndex: 1, }} >
           <Row>
             <Col>
-              <Text color="#000" size={12}>
+              <Text h2 color="white" css={{ letterSpacing: "$tight", fontFamily: "Poppins" }}>
+                {titulo}
+              </Text>
+              <Text h4 color="#FFF">
                 {texto}
               </Text>
             </Col>
@@ -48,19 +48,21 @@ export const SecServicios = () => {
   }
 
   return (
-    <Grid.Container gap={2} justify="center">
-      <Grid xs={12} justify="center">
-        <Titulo texto="Nuestros Servicios" />
-      </Grid>
+    <>
+    <Grid.Container gap={1} justify="center">
+
       {
         dataSeccion3.map((item, index) => {
           return (
-            <Grid key={index} xs={12} md={4}>
+            <Grid key={index} xs={12}>
               <CardSeccion2 titulo={item.titulo} texto={item.texto} imagen={item.imagen} />
             </Grid>
           )
         })
       }
+      <Spacer y={2} />
     </Grid.Container>
+      </>
+    
   )
 }

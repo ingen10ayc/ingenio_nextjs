@@ -1,5 +1,4 @@
-import { Card, Col, Row, Container, Text, Grid, Image, Spacer } from '@nextui-org/react';
-import { Titulo } from './Titulo';
+import {Image, Spacer } from '@nextui-org/react';
 import Marquee from "react-marquee-slider";
 
 
@@ -43,23 +42,18 @@ export const LogoSlider = () => {
     }
   ]
   return (
-    <Grid.Container gap={0} justify="center">
-      <Grid xs={12} justify="center">
-        <Titulo texto="Nuestros clientes nos respaldan" />
-      </Grid>
-      <Grid xs={12} justify="center">
-        <Text h1 size={60} css={{ textGradient: "45deg, $blue500 -20%, $pink500 50%", }} weight="bold" >
-          <Marquee velocity={25}>
-            {
-              listLogos.map((item, index) => {
-                return (
-                  <Image src={item.logo} alt={item.nombre} key={index} width={300} />
-                )
-              })
-            }
-          </Marquee>
-        </Text>
-      </Grid>
-    </Grid.Container>
+    <>
+      <Spacer y={2}/>
+      <Marquee velocity={25}>
+        {
+          listLogos.map((item, index) => {
+            return (
+              <Image src={item.logo} alt={item.nombre} key={index} width={300} />
+            )
+          })
+        }
+      </Marquee>
+      <Spacer y={2}/>
+    </>
   )
 }

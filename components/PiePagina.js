@@ -26,7 +26,7 @@ export const PiePagina = () => {
       ]
     },
     {
-      titulo: "Ingen10 Automatización y Control",
+      titulo: "IngenIO Automatización y Control",
       direccion: "Calle 5 de mayo #18, Col. Centro, 43740 Cuautepec de Hinojosa, Hidalgo.",
       maps: "https://goo.gl/maps/6dqE7xzVsshLk4GfA",
       iframe: '"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d937.1177286386065!2d-98.303912!3d20.0307087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf6e6d875a226239e!2sIngenio%20Automatizaci%C3%B3n%20y%20control!5e0!3m2!1ses-419!2smx!4v1651521653690!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"'
@@ -57,6 +57,7 @@ export const PiePagina = () => {
       ]
     }
   ]
+
   const CardFooter1 = ({ titulo, subtitulo, telefonos }) => {
     return (
       <Card shadow={false} css={{ background: '$accents9' }}>
@@ -108,15 +109,24 @@ export const PiePagina = () => {
               <Text h4 color="white" css={{ marginBottom: 10 }}>
                 {elemento1.titulo}
               </Text>
+            </Col>
+          </Row>
+          <Spacer y={1} />
+          <Row>
+            <Grid xs={6} >
+              <Image src="https://img.icons8.com/fluency/48/000000/marker.png" alt="map" width={40} css={{ paddingTop: "30%"}}/>
+            </Grid>
+            <Grid >
               <a href={elemento1.maps} target="_blank" rel="noreferrer">
                 <Text h5 color="white" >
                   {elemento1.direccion}
                 </Text>
               </a>
-            </Col>
+            </Grid>
+
           </Row>
-        </Container>
-      </Card>
+        </Container >
+      </Card >
     )
   }
   const CardFooter3 = ({ elemento2 }) => {
@@ -179,7 +189,7 @@ export const PiePagina = () => {
       <Card css={{ background: '$accents9', borderRadius: 0 }}>
         <Row justify="center">
           <Text color='white' >
-            © 2022 IngenIO Automatización y Control - Website creado por <a href="https://www.instagram.com/toruk.dev" target="_blank" rel="noreferrer">toruk.dev</a>
+            © 2022 Ingen10 ® Automatización y Control - Website creado por <a href="https://www.instagram.com/jackjs.dev" target="_blank" rel="noreferrer">jackjs.dev</a>
           </Text>
         </Row>
         <Spacer y={1} />

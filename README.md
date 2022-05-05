@@ -1,1 +1,1 @@
-Creado por instagram.com/toruk.dev
+Creado por jackjs.dev (https://www.instagram.com/jackjs.dev/)
