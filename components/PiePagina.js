@@ -4,30 +4,31 @@ import Link from "next/link"
 export const PiePagina = () => {
   const dataFooter = [
     {
-      titulo: "Tienes preguntas, llámanos y te atenderemos.",
-      subtitulo: "Teléfonos y WhatsApp:",
+      titulo: "Dudas o preguntas, le atenderemos por teléfono o WhatsApp",
+      subtitulo: "",
       telefonos: [
         {
-          numero: "775 758 8280",
-          href: "tel:+5217757588280"
+          numero: "775 114 0981",
+          href: "https://wa.me/message/SCSFUBQDIJU3A1"
         },
         {
-          numero: "775 114 0981",
-          href: "tel:+5217751140981"
+          numero: "775 759 0736",
+          href: "https://wa.me/message/YNHIXVWYCBHLJ1"
         },
         {
           numero: "775 161 0700",
-          href: "tel:+5217751610700"
+          href: "https://wa.me/message/S5FMQOYTY5FCJ1"
         },
         {
-          numero: "771 747 1606",
-          href: "tel:+5217717471606"
+          numero: "775 758 8280",
+          href: "https://wa.me/message/PZ4TJ7A2PUOSI1"
         }
       ]
     },
     {
       titulo: "IngenIO Automatización y Control",
-      direccion: "Calle 5 de mayo #18, Col. Centro, 43740 Cuautepec de Hinojosa, Hidalgo.",
+      subtitulo:"Orgullosamente Mexicanos",
+      direccion: "Calle 5 de mayo #18, Col. Centro, 43740 Cuautepec de Hinojosa, Hidalgo, México",
       maps: "https://goo.gl/maps/6dqE7xzVsshLk4GfA",
       iframe: '"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d937.1177286386065!2d-98.303912!3d20.0307087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf6e6d875a226239e!2sIngenio%20Automatizaci%C3%B3n%20y%20control!5e0!3m2!1ses-419!2smx!4v1651521653690!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"'
     },
@@ -66,30 +67,27 @@ export const PiePagina = () => {
             <Text h4 color="white" css={{ marginBottom: 10 }}>
               {titulo}
             </Text>
-            <Text h5 color="white" css={{ marginBottom: 10 }}>
-              {subtitulo}
-            </Text>
             <Row>
               <Col>
                 <a href={telefonos[0].href} target="_blank" rel="noreferrer">
-                  <Text h5 color="white">
+                  <Text h4 color="white">
                     {telefonos[0].numero}
                   </Text>
                 </a>
                 <a href={telefonos[1].href} target="_blank" rel="noreferrer">
-                  <Text h5 color="white">
+                  <Text h4 color="white">
                     {telefonos[1].numero}
                   </Text>
                 </a>
               </Col>
               <Col>
                 <a href={telefonos[2].href} target="_blank" rel="noreferrer">
-                  <Text h5 color="white">
+                  <Text h4 color="white">
                     {telefonos[2].numero}
                   </Text>
                 </a>
                 <a href={telefonos[3].href} target="_blank" rel="noreferrer">
-                  <Text h5 color="white">
+                  <Text h4 color="white">
                     {telefonos[3].numero}
                   </Text>
                 </a>
@@ -108,6 +106,13 @@ export const PiePagina = () => {
             <Col>
               <Text h4 color="white" css={{ marginBottom: 10 }}>
                 {elemento1.titulo}
+              </Text>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Text h5 color="white" css={{ marginBottom: 10 }}>
+                {elemento1.subtitulo}
               </Text>
             </Col>
           </Row>
@@ -138,7 +143,7 @@ export const PiePagina = () => {
                 <Text h4 color="white" >
                   {elemento2.titulo}
                 </Text>
-                <Spacer y={3} />
+                <Spacer y={4} />
               </Row>
               <Row>
                 <Col>

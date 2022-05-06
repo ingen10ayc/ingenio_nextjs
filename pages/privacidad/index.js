@@ -2,9 +2,10 @@ import { Titulo } from "../../components/Titulo"
 import { Card, Container, Text, Spacer } from "@nextui-org/react"
 import { Menu } from "../../components/Menu"
 import { PiePagina } from "../../components/PiePagina"
+import Head from 'next/head'
+import { useMediaQuery } from "../../components/useMediaQuery"
 
-
-export default function index() {
+export default function Index() {
   const Subtitulo = ({ texto }) => {
     return (
       <Text h2 css={{ fontFamily: "Poppins" }}>
@@ -43,10 +44,16 @@ export default function index() {
       </>
     )
   }
+  const isMd = useMediaQuery(960);
 
   return (
     <>
-      <Menu />
+      <Head>
+        <title>Aviso de Privacidad | IngenIO Automatización y Control</title>
+        <meta name="description" content="Aviso de privacidad de IngenIO Automatización y Control" />
+        <link rel="icon" href="/images/favicon.png" />
+      </Head>
+      <Menu  isMd={isMd}/>
       <Titulo texto="Aviso de privacidad" />
       <Container>
         <Card>
@@ -78,13 +85,13 @@ export default function index() {
             <Parrafo texto="Estas cookies, web beacons y otras tecnologías pueden ser deshabilitadas. Para conocer cómo hacerlo, consulte el menú de ayuda de su navegador. Tenga en cuenta que, en caso de desactivar las cookies, es posible que no pueda acceder a ciertas funciones personalizadas en nuestros sitio web." />
             <Subtitulo texto="¿Cómo puede conocer los cambios en este aviso de privacidad?" />
             <Parrafo texto="El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantener actualizado este aviso de privacidad sobre los cambios que pueda sufrir y siempre podrá consultar las actualizaciones que existan en el sitio web www.ingenioayc.com." />
-            <Text h4 css={{ textAlign: "end",fontFamily: "Poppins" }}>
+            <Text h4 css={{ textAlign: "end", fontFamily: "Poppins" }}>
               Última actualización de este aviso de privacidad: 05/05/2022
             </Text>
           </Container>
         </Card>
       </Container>
-      <Spacer y={4}/>
+      <Spacer y={4} />
       <PiePagina />
     </>
   )

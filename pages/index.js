@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>IngenIO Automatización y Control | Bienvenidos</title>
+        <title>Bienvenidos | IngenIO Automatización y Control</title>
         <meta name="description" content="Página de inicio de IngenIO Automatización y Control" />
         <link rel="icon" href="/images/favicon.png" />
       </Head>

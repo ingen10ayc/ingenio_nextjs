@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Card, Grid, Image, Row } from '@nextui-org/react';
+import { Card, Image, Row } from '@nextui-org/react';
 
 export const Menu = ({ isMd }) => {
   return (
