@@ -27,8 +27,8 @@ export default function Home() {
         <Container>
           <VideoCard src="/video1.mp4" />
         </Container>
-          <Titulo texto="¿Por qué nosotros?" />
-        <Container css={{ background: "#14279B"}}>
+        <Titulo texto="¿Por qué nosotros?" />
+        <Container css={{ background: "#14279B" }}>
           <SecValorSlider />
         </Container>
         <Titulo texto="Nuestros productos" />
@@ -37,7 +37,7 @@ export default function Home() {
         </Container>
         <Titulo texto="Nuestros servicios" />
         <Container>
-          <SecServicios isMd={isMd}/>
+          <SecServicios isMd={isMd} />
         </Container>
         <Titulo texto="Nuestros clientes nos respaldan" />
         <Container>

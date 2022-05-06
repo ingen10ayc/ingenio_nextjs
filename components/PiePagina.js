@@ -1,5 +1,5 @@
 import { Card, Col, Row, Container, Text, Grid, Image, Spacer } from '@nextui-org/react';
-
+import Link from "next/link"
 
 export const PiePagina = () => {
   const dataFooter = [
@@ -114,7 +114,7 @@ export const PiePagina = () => {
           <Spacer y={1} />
           <Row>
             <Grid xs={6} >
-              <Image src="https://img.icons8.com/fluency/48/000000/marker.png" alt="map" width={40} css={{ paddingTop: "30%"}}/>
+              <Image src="https://img.icons8.com/fluency/48/000000/marker.png" alt="map" width={40} css={{ paddingTop: "30%" }} />
             </Grid>
             <Grid >
               <a href={elemento1.maps} target="_blank" rel="noreferrer">
@@ -123,7 +123,6 @@ export const PiePagina = () => {
                 </Text>
               </a>
             </Grid>
-
           </Row>
         </Container >
       </Card >
@@ -139,7 +138,7 @@ export const PiePagina = () => {
                 <Text h4 color="white" >
                   {elemento2.titulo}
                 </Text>
-                <Spacer y={4} />
+                <Spacer y={3} />
               </Row>
               <Row>
                 <Col>
@@ -162,6 +161,18 @@ export const PiePagina = () => {
                     <Image src={elemento2.redes[3].icono} alt={elemento2.redes[3].nombre} width={40} />
                   </a>
                 </Col>
+              </Row>
+              <Spacer y={1} />
+              <Row>
+                <Grid justify='center'>
+                  <Link href="/privacidad" passHref>
+                    <a>
+                    <Text h5 color="white" >
+                      Aviso de privacidad
+                    </Text>
+                    </a>
+                  </Link>
+                </Grid>
               </Row>
             </Col>
           </Row>
