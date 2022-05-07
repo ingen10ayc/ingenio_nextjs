@@ -3,13 +3,11 @@ import { Container } from '@nextui-org/react';
 import { useMediaQuery } from '../components/useMediaQuery';
 import { Titulo } from '../components/Titulo';
 // Components
-import { Menu } from '../components/Menu';
 import { VideoCard } from '../components/VideoCard';
 import { SecValorSlider } from '../components/SecValorSlider';
 import { SecProductos } from '../components/SecProductos';
 import { SecServicios } from '../components/SecServicios';
 import { LogoSlider } from '../components/LogoSlider';
-import { PiePagina } from '../components/PiePagina';
 
 export default function Home() {
   const isMd = useMediaQuery(960);
@@ -20,12 +18,9 @@ export default function Home() {
         <meta name="description" content="Página de inicio de IngenIO Automatización y Control" />
         <link rel="icon" href="/images/favicon.png" />
       </Head>
-      <header>
-        <Menu isMd={isMd} />
-      </header>
       <main>
         <Container>
-          <VideoCard src="/video1.mp4" />
+          <VideoCard src="/video1.mp4" poster="./images/banner.png"/>
         </Container>
         <Titulo texto="¿Por qué nosotros?" />
         <Container css={{ background: "#14279B" }}>
@@ -44,9 +39,6 @@ export default function Home() {
           <LogoSlider />
         </Container>
       </main>
-      <footer >
-        <PiePagina />
-      </footer>
     </div>
   );
 }

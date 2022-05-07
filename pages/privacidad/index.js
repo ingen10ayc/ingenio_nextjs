@@ -1,9 +1,6 @@
 import { Titulo } from "../../components/Titulo"
 import { Card, Container, Text, Spacer } from "@nextui-org/react"
-import { Menu } from "../../components/Menu"
-import { PiePagina } from "../../components/PiePagina"
 import Head from 'next/head'
-import { useMediaQuery } from "../../components/useMediaQuery"
 
 export default function Index() {
   const Subtitulo = ({ texto }) => {
@@ -44,7 +41,6 @@ export default function Index() {
       </>
     )
   }
-  const isMd = useMediaQuery(960);
 
   return (
     <>
@@ -53,7 +49,6 @@ export default function Index() {
         <meta name="description" content="Aviso de privacidad de IngenIO Automatización y Control" />
         <link rel="icon" href="/images/favicon.png" />
       </Head>
-      <Menu  isMd={isMd}/>
       <Titulo texto="Aviso de privacidad" />
       <Container>
         <Card>
@@ -92,7 +87,6 @@ export default function Index() {
         </Card>
       </Container>
       <Spacer y={4} />
-      <PiePagina />
     </>
   )
 }
