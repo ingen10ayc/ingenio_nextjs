@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <main>
         <Container>
-          <VideoCard src="/video1.mp4" poster="./images/banner.png"/>
+          <VideoCard src="/video1.mp4"/>
         </Container>
         <Titulo texto="¿Por qué nosotros?" />
         <Container css={{ background: "#14279B" }}>
