@@ -130,20 +130,20 @@ export default function index() {
     return (
       <>
         <Card css={{ background: "#3D56B2" }}>
-          <Grid.Container gap={2} alignItems="center">
+          <Grid.Container gap={2} alignItems="center" justify="center">
             <Grid xs={12} md={6}>
 
               <Container alignContent="center">
                 <Row>
                   <Col>
-                    <Text h2 color="white" css={{ letterSpacing: "$tighter", fontFamily: "Poppins" }} weight="bold">
+                    <Text h2 color="white" css={{ letterSpacing: "$tighter", textAlign:"center", fontFamily: "Poppins" }} weight="bold">
                       {ubicacion.titulo}
                     </Text>
                   </Col>
                 </Row>
                 <Row>
                   <Col>
-                    <Text h3 color="white" css={{ letterSpacing: "$tighter", fontFamily: "Poppins" }} weight="bold">
+                    <Text h3 color="white" css={{ letterSpacing: "$tighter",textAlign:"center", fontFamily: "Poppins" }} weight="bold">
                       {ubicacion.subtitulo}
                     </Text>
                   </Col>
