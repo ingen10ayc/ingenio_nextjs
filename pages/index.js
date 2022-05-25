@@ -8,6 +8,8 @@ import { SecValorSlider } from '../components/SecValorSlider';
 import { SecProductos } from '../components/SecProductos';
 import { SecServicios } from '../components/SecServicios';
 import { LogoSlider } from '../components/LogoSlider';
+import { Subtitulo } from "../components/Subtitulo"
+
 
 export default function Home() {
   const isMd = useMediaQuery(960);
@@ -20,7 +22,8 @@ export default function Home() {
       </Head>
       <main>
         <Container>
-          <VideoCard src="/video1.mp4"/>
+          <Subtitulo texto="¡¡ Aprovecha nuestro Hot Sale 🔥🏷️ !!" color='error' />
+          <VideoCard src="https://www.youtube.com/watch?v=vKyBuZR964k" isMd={isMd} />
         </Container>
         <Titulo texto="¿Por qué nosotros?" />
         <Container css={{ background: "#14279B" }}>
