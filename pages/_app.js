@@ -8,9 +8,9 @@ function MyApp({ Component, pageProps }) {
   const isMd = useMediaQuery(960);
   return (
     <NextUIProvider>
-      <Menu isMd={isMd} />    
+      <Menu isMd={isMd} />
       <Component {...pageProps} />
-      <PiePagina></PiePagina>
+      <PiePagina />
     </NextUIProvider>
   )
 }

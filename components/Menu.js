@@ -18,6 +18,10 @@ export const Menu = ({ isMd }) => {
     {
       titulo: "Contacto",
       url: "contacto"
+    },
+    {
+      titulo: "Galería",
+      url: "galeria"
     }
   ]
   return (

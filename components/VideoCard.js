@@ -19,3 +19,4 @@ export const VideoCard = ({ src, isMd }) => {
     </div>
   )
 }
+ 

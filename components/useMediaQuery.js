@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export const useMediaQuery = (width)=> {
   const [targetReached, setTargetReached] = React.useState(false);
 
