@@ -22,7 +22,6 @@ const Index = () => {
   const handleTipo = (e) => {
     setTipo(e.target.name)
   }
-  console.log(useScreenSize().width)
   return (
     <>
 
