@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Titulo } from '../../components/Titulo';
 import { data } from './data';
 import { useState } from 'react';
+import useScreenSize from '../../components/useScreenSize';
 import Head from 'next/head';
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
   const handleTipo = (e) => {
     setTipo(e.target.name)
   }
+  console.log(useScreenSize().width)
   return (
     <>
 
@@ -29,9 +31,9 @@ const Index = () => {
         <meta name="description" content="Galería de maquinas vending fabricadas en IngenIO Automatización y Control" />
         <link rel="icon" href="/images/favicon.png" />
       </Head>
-      <Modal noPadding open={visible} onClose={closeHandler} width="80%">
+      <Modal noPadding open={visible} onClose={closeHandler} width={useScreenSize().height / 1.6} >
         <Modal.Body>
-          <Image alt={imgUrl} src={imgUrl} width={tipo == 1 || tipo == 7 ? '900' : '600'} height={tipo == 1 || tipo == 7 ? '1400' : '600'} layout="responsive" placeholder="blur" blurDataURL={imgUrl} />
+          <Image alt={imgUrl} src={imgUrl} width="900px" height={tipo == 1 || tipo == 7 ? "1400px" : "900px"} layout="responsive" placeholder="blur" blurDataURL={imgUrl} quality="50" />
         </Modal.Body>
       </Modal>
       <Titulo texto="Galería" />
