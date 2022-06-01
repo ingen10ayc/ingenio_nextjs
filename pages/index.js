@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Container } from '@nextui-org/react';
+import { Container, Spacer } from '@nextui-org/react';
 import { useMediaQuery } from '../components/useMediaQuery';
 import { Titulo } from '../components/Titulo';
 // Components
@@ -22,8 +22,9 @@ export default function Home() {
       </Head>
       <main>
         <Container>
-          <Subtitulo texto="¡¡ Aprovecha nuestro Hot Sale 🔥🏷️ !!" color='error' />
-          <VideoCard src="https://www.youtube.com/watch?v=vKyBuZR964k" isMd={isMd} />
+          <Spacer y={2}/>
+          {/* <Subtitulo texto="¡¡ Aprovecha nuestro Hot Sale 🔥🏷️ !!" color='error' /> */}
+          <VideoCard src="https://www.youtube.com/watch?v=xX_3kpdaVbs" isMd={isMd} poster="/images/banner.jpg" />
         </Container>
         <Titulo texto="¿Por qué nosotros?" />
         <Container css={{ background: "#14279B" }}>

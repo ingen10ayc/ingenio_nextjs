@@ -1,6 +1,6 @@
 
 import ReactPlayer from 'react-player'
-export const VideoCard = ({ src, isMd }) => {
+export const VideoCard = ({ src, isMd, poster }) => {
 
   return (
     <div className="player-wrapper">
@@ -11,10 +11,10 @@ export const VideoCard = ({ src, isMd }) => {
         playing
         width="100%"
         height="100%"
-        controls={false}
+        controls={true}
         pip={false}
         loop
-        light={isMd ? 'https://i.ibb.co/cCfgLzp/thumb-hotsale.png' : false}
+        light={isMd ? poster : false}
       />
     </div>
   )
