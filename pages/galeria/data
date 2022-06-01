@@ -13,7 +13,6 @@ export const data = [
     "/images/gallery/basica/aguaDeCampo.png",
     "/images/gallery/basica/aguaDolce.png",
     "/images/gallery/basica/aguaNatural.png",
-    "/images/gallery/basica/aguaRoja.png",
     "/images/gallery/basica/aquaGeo.png",
     "/images/gallery/basica/basicaSati.png",
     "/images/gallery/basica/ingenIO.png",
