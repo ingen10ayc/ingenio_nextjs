@@ -1,0 +1,571 @@
+
+export const categorias = [
+  "Basicas",
+  "Avanzadas",
+  "Premium",
+  "Billetero",
+  "Gold",
+  "Tapas",
+  "Dobles",
+  "Personalizadas"
+]
+export const images = [
+  [
+    {
+      original: "/images/gallery/basica/aguaDeCampo.png",
+      thumbnail: "/images/gallery/basica/aguaDeCampo.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/aguaDolce.png",
+      thumbnail: "/images/gallery/basica/aguaDolce.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/aguaNatural.png",
+      thumbnail: "/images/gallery/basica/aguaNatural.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/aquaGeo.png",
+      thumbnail: "/images/gallery/basica/aquaGeo.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/basicaSati.png",
+      thumbnail: "/images/gallery/basica/basicaSati.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/ingenIO.png",
+      thumbnail: "/images/gallery/basica/ingenIO.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/ingenIO2.png",
+      thumbnail: "/images/gallery/basica/ingenIO2.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/ingenIOBlanco.png",
+      thumbnail: "/images/gallery/basica/ingenIOBlanco.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/ingenIOBlanco2.png",
+      thumbnail: "/images/gallery/basica/ingenIOBlanco2.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/ingenIONegro.png",
+      thumbnail: "/images/gallery/basica/ingenIONegro.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/kellysHouse.png",
+      thumbnail: "/images/gallery/basica/kellysHouse.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/laGotaGorda.png",
+      thumbnail: "/images/gallery/basica/laGotaGorda.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/lasPalmitas.png",
+      thumbnail: "/images/gallery/basica/lasPalmitas.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/basica/laVeracruzana.png",
+      thumbnail: "/images/gallery/basica/laVeracruzana.png",
+      loading: "lazy"
+    }
+  ],
+  [
+    {
+      original: "/images/gallery/avanzada/ingenIO.png",
+      thumbnail: "/images/gallery/avanzada/ingenIO.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/aguaClara.png",
+      thumbnail: "/images/gallery/avanzada/aguaClara.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/aguaValdez.png",
+      thumbnail: "/images/gallery/avanzada/aguaValdez.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/alphaWater.png",
+      thumbnail: "/images/gallery/avanzada/alphaWater.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/aquaLife.png",
+      thumbnail: "/images/gallery/avanzada/aquaLife.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/aquaMex.png",
+      thumbnail: "/images/gallery/avanzada/aquaMex.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/aquaShekinah.png",
+      thumbnail: "/images/gallery/avanzada/aquaShekinah.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/aquaVitae.png",
+      thumbnail: "/images/gallery/avanzada/aquaVitae.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/aquaVitae.png",
+      thumbnail: "/images/gallery/avanzada/aquaVitae.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/costaRica.png",
+      thumbnail: "/images/gallery/avanzada/costaRica.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/elColibri.png",
+      thumbnail: "/images/gallery/avanzada/elColibri.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/faroEnrique.png",
+      thumbnail: "/images/gallery/avanzada/faroEnrique.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/fuenteLiss.png",
+      thumbnail: "/images/gallery/avanzada/fuenteLiss.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/hidromex.png",
+      thumbnail: "/images/gallery/avanzada/hidromex.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/laGarza.png",
+      thumbnail: "/images/gallery/avanzada/laGarza.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/proWater.png",
+      thumbnail: "/images/gallery/avanzada/proWater.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/puraClean.png",
+      thumbnail: "/images/gallery/avanzada/puraClean.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/purezaLiquida.png",
+      thumbnail: "/images/gallery/avanzada/purezaLiquida.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/avanzada/santaCatarina.png",
+      thumbnail: "/images/gallery/avanzada/santaCatarina.png",
+      loading: "lazy"
+    }
+  ],
+  [
+    {
+      original: "/images/gallery/premium/0Water.png",
+      thumbnail: "/images/gallery/premium/0Water.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/acquaLife.png",
+      thumbnail: "/images/gallery/premium/acquaLife.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aguaLife.png",
+      thumbnail: "/images/gallery/premium/aguaLife.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aguaPuri1.png",
+      thumbnail: "/images/gallery/premium/aguaPuri1.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aguaPuri4.png",
+      thumbnail: "/images/gallery/premium/aguaPuri4.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aguaPuri5.png",
+      thumbnail: "/images/gallery/premium/aguaPuri5.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aguaSoly.png",
+      thumbnail: "/images/gallery/premium/aguaSoly.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aguaZero.png",
+      thumbnail: "/images/gallery/premium/aguaZero.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/akuaPure.png",
+      thumbnail: "/images/gallery/premium/akuaPure.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aquaMyM.png",
+      thumbnail: "/images/gallery/premium/aquaMyM.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aquaVitae.png",
+      thumbnail: "/images/gallery/premium/aquaVitae.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aviva.png",
+      thumbnail: "/images/gallery/premium/aviva.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/aWater.png",
+      thumbnail: "/images/gallery/premium/aWater.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/bienestar.png",
+      thumbnail: "/images/gallery/premium/bienestar.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/bioNatural.png",
+      thumbnail: "/images/gallery/premium/bioNatural.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/fenix2.png",
+      thumbnail: "/images/gallery/premium/fenix2.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/grupoErma.png",
+      thumbnail: "/images/gallery/premium/grupoErma.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/grupoPuri.png",
+      thumbnail: "/images/gallery/premium/grupoPuri.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/grupoSoma.png",
+      thumbnail: "/images/gallery/premium/grupoSoma.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/laEstancia.png",
+      thumbnail: "/images/gallery/premium/laEstancia.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/novu.png",
+      thumbnail: "/images/gallery/premium/novu.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/osAgua.png",
+      thumbnail: "/images/gallery/premium/osAgua.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/poseidon.png",
+      thumbnail: "/images/gallery/premium/poseidon.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/purezaEstrella.png",
+      thumbnail: "/images/gallery/premium/purezaEstrella.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/puriHouse.png",
+      thumbnail: "/images/gallery/premium/puriHouse.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/qualityWater.png",
+      thumbnail: "/images/gallery/premium/qualityWater.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/riK.png",
+      thumbnail: "/images/gallery/premium/riK.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/rocorma.png",
+      thumbnail: "/images/gallery/premium/rocorma.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/shely.png",
+      thumbnail: "/images/gallery/premium/shely.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/solLuna.png",
+      thumbnail: "/images/gallery/premium/solLuna.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/premium/trianguiRojo.png",
+      thumbnail: "/images/gallery/premium/trianguiRojo.png",
+      loading: "lazy"
+    },
+  ],
+  [
+    {
+      original: "/images/gallery/billetero/aguaMillenium.png",
+      thumbnail: "/images/gallery/billetero/aguaMillenium.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/billetero/grupoSoma.png",
+      thumbnail: "/images/gallery/billetero/grupoSoma.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/billetero/losArcos.png",
+      thumbnail: "/images/gallery/billetero/losArcos.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/billetero/pureza.png",
+      thumbnail: "/images/gallery/billetero/pureza.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/billetero/trianguiNegro.png",
+      thumbnail: "/images/gallery/billetero/trianguiNegro.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/billetero/trianguiRojo.png",
+      thumbnail: "/images/gallery/billetero/trianguiRojo.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/billetero/xelha.png",
+      thumbnail: "/images/gallery/billetero/xelha.png",
+      loading: "lazy"
+    }
+  ],
+  [
+    {
+      original: "/images/gallery/gold/waterFillin.png",
+      thumbnail: "/images/gallery/gold/waterFillin.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/gold/grisit.png",
+      thumbnail: "/images/gallery/gold/grisit.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/gold/mana.png",
+      thumbnail: "/images/gallery/gold/mana.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/gold/perfectWater.png",
+      thumbnail: "/images/gallery/gold/perfectWater.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/gold/tecnologies.png",
+      thumbnail: "/images/gallery/gold/tecnologies.png",
+      loading: "lazy"
+    }
+  ],
+  [
+    {
+      original: "/images/gallery/tapas/aguaNuevas.png",
+      thumbnail: "/images/gallery/tapas/aguaNuevas.png",
+      loading: "lazy"
+    }
+  ],
+  [
+    {
+      original: "/images/gallery/dobles/aquaPura.png",
+      thumbnail: "/images/gallery/dobles/aquaPura.png",
+      loading: "lazy"
+    },
+    {
+      original: "/images/gallery/dobles/mTech.png",
+      thumbnail: "/images/gallery/dobles/mTech.png",
+      loading: "lazy"
+    }
+  ],
+  [
+    {
+      original: "/images/gallery/personalizadas/laPerla.png",
+      thumbnail: "/images/gallery/personalizadas/laPerla.png",
+      loading: "lazy"
+    }
+  ],
+  // [
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   },
+  //   {
+  //     original:
+  //       thumbnail:
+  //     loading: "lazy"
+  //   }
+  // ]
+]
